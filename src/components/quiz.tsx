@@ -74,6 +74,8 @@ const Quiz = () => {
         }
         setShowErrorModal(false)
       } else {
+        const failSound = new Audio('/fail.mp3')
+        failSound.play()
         setShowErrorModal(true)
       }
       setFeedback({ isCorrect: false, selectedOption: null })

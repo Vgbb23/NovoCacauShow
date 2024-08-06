@@ -1,6 +1,13 @@
 import { useState } from 'react'
 import Question from './question'
 
+interface Question {
+  question: string
+  options: string[]
+  answer: string
+  hint: string
+}
+
 const questions = [
   {
     question: 'De que planta vem o chocolate?',
@@ -43,6 +50,7 @@ const Quiz = () => {
     selectedOption: string | null
   }>({ isCorrect: false, selectedOption: null })
   const [showErrorModal, setShowErrorModal] = useState(false)
+  const [completionSoundPlayed, setCompletionSoundPlayed] = useState(false)
 
   const handleAnswer = (selectedOption: string) => {
     const isCorrect = questions[currentQuestion].answer === selectedOption
@@ -51,8 +59,17 @@ const Quiz = () => {
     setTimeout(() => {
       if (isCorrect) {
         if (currentQuestion === questions.length - 1) {
+          // Reproduzir o som de conclusão do quiz somente se ainda não tiver sido tocado
+          if (!completionSoundPlayed) {
+            const completionSound = new Audio('/completion.mp3')
+            completionSound.play()
+            setCompletionSoundPlayed(true)
+          }
           setQuizCompleted(true)
         } else {
+          // Reproduzir o som de resposta correta
+          const correctSound = new Audio('/correct.mp3')
+          correctSound.play()
           setCurrentQuestion(currentQuestion + 1)
         }
         setShowErrorModal(false)
@@ -105,7 +122,7 @@ const Quiz = () => {
       )}
       {quizCompleted && (
         <div className="w-full flex flex-col gap-3 text-center">
-          <h2 className="text-2xl font-bold text-brown">Parabéns!</h2>
+          <h2 className="text-3xl font-bold text-brown">PARABÉNS!</h2>
           <p className="text-lg text-black">
             Você <u>completou o quiz</u> com sucesso e ganhou{' '}
             <b>acesso as caixas brancas!</b>

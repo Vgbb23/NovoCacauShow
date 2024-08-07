@@ -89,7 +89,7 @@ const Quiz = () => {
   return (
     <div className="w-[95%] flex flex-col justify-center items-center text-center p-8 bg-white rounded-lg shadow-lg relative">
       <h1 className="text-3xl font-bold text-brown mb-6 underline">
-        Quiz Cacau Show
+        Desafio Cacau Show
       </h1>
       {!quizCompleted && (
         <>

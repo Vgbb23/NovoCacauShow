@@ -77,3 +77,96 @@ export function Carroussel2() {
     </Slider>
   )
 }
+
+export function Carroussel3() {
+  const settings = {
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    speed: 1500,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+  }
+  return (
+    <Slider {...settings} className="w-full">
+      <div className="w-full flex flex-col items-center">
+        <span className="w-16 h-16 items-center justify-center bg-gray-200 rounded-full mb-4 text-2xl font-bold !inline-flex">
+          1
+        </span>
+        <p className="text-xl">Escolha seu Plano</p>
+        <p className="text-gray-500">
+          Selecione o plano que melhor se adapta a você.
+        </p>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <span className="w-16 h-16 items-center justify-center bg-gray-200 rounded-full mb-4 text-2xl font-bold !inline-flex">
+          2
+        </span>
+        <p className="text-xl">Receba em Casa</p>
+        <p className="text-gray-500">
+          Todo mês, enviaremos um novo produto Dior diretamente para você.
+        </p>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <span className="w-16 h-16 items-center justify-center bg-gray-200 rounded-full mb-4 text-2xl font-bold !inline-flex">
+          3
+        </span>
+        <p className="text-xl">Experimente e Avalie</p>
+        <p className="text-gray-500">
+          Teste o produto e nos envie seu feedback.
+        </p>
+      </div>
+    </Slider>
+  )
+}
+
+export function Carroussel4() {
+  const settings = {
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    speed: 1500,
+    pauseOnHover: true,
+  }
+
+  return (
+    <Slider {...settings} className="w-full">
+      <div className="w-full flex flex-col items-center">
+        <span className="text-4xl mb-4">✨</span>
+        <p className="text-xl font-bold">Novidades Mensais</p>
+        <p className="text-gray-500">
+          Esteja entre os primeiros a experimentar os lançamentos da Dior.
+        </p>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <span className="text-4xl mb-4">😊</span>
+        <p className="text-xl font-bold">Feedback Valoroso</p>
+        <p className="text-gray-500">
+          Sua opinião é importante para nós e ajuda a melhorar nossos produtos.
+        </p>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <span className="text-4xl mb-4">💸</span>
+        <p className="text-xl font-bold">Descontos Exclusivos</p>
+        <p className="text-gray-500">
+          Receba cupons e descontos especiais para futuras compras.
+        </p>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <span className="text-4xl mb-4">🔄</span>
+        <p className="text-xl font-bold">Flexibilidade</p>
+        <p className="text-gray-500">
+          Pause ou cancele sua assinatura a qualquer momento.
+        </p>
+      </div>
+    </Slider>
+  )
+}

@@ -38,7 +38,7 @@ const inter = Archivo({ subsets: ['latin'] })
 
 export default function Sauvage() {
   const [modal, setModal] = useState(false)
-  const [selectedPayment, setSelectedPayment] = useState('credit-card')
+  const [selectedPayment, setSelectedPayment] = useState('pix')
   const router = useRouter()
   const { id } = router.query
 
@@ -91,7 +91,7 @@ export default function Sauvage() {
         className={`w-full min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-4 bg-white ${inter.className}`}
       >
         {modal && (
-          <div className="fixed top-10 left-0 w-full h-full flex justify-center items-start bg-[#00000050] z-30">
+          <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-[#00000050] z-30">
             <div className="relative w-[95%] h-max flex flex-col items-center justify-center p-6 gap-4 rounded-xl bg-white md:w-1/3 animate-fade-in">
               <X
                 size={22}
@@ -101,7 +101,7 @@ export default function Sauvage() {
               />
               <h1 className="text-xl font-bold">FORMAS DE PAGAMENTO</h1>
               <div className="w-full flex justify-center gap-4">
-                <div
+                {/* <div
                   onClick={() => handlePaymentSelection('credit-card')}
                   className={`w-[110px] flex flex-col justify-center items-center p-2 border rounded-lg cursor-pointer ${
                     selectedPayment === 'credit-card' ? 'border-black' : ''
@@ -109,7 +109,7 @@ export default function Sauvage() {
                 >
                   <CreditCard size={32} weight="fill" />
                   <p className="text-[11px]">Cartão de crédito</p>
-                </div>
+                </div> */}
                 <div
                   onClick={() => handlePaymentSelection('pix')}
                   className={`w-[110px] flex flex-col justify-center items-center gap-2 p-2 border rounded-lg cursor-pointer ${
@@ -125,14 +125,14 @@ export default function Sauvage() {
                   <p className="text-[11px]">Pix</p>
                 </div>
               </div>
-              {selectedPayment === 'credit-card' && (
+              {/* {selectedPayment === 'credit-card' && (
                 <div className="w-full">
                   <div className="w-full flex justify-between bg-[#f2f3f4] text-xs text-[#565c69] py-[3px] px-[7px] rounded-[4px]">
                     <p>À vista</p> <p>Total: R$ {productData.price}</p>
                   </div>
                   <p className="underline mt-3">Ou no cartão em até 12x!</p>
                 </div>
-              )}
+              )} */}
               {selectedPayment === 'pix' && (
                 <div className="w-full flex flex-col items-center gap-4">
                   <div>
@@ -201,10 +201,21 @@ export default function Sauvage() {
             <h1 className="text-[#282828] text-3xl font-bold">
               R$ {productData.price}
             </h1>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <CreditCard size={18} />
               <p className="text-[15px]">
                 em até 12x de <b>R$ {productData.parcelamento}</b>
+              </p>
+            </div> */}
+            <div className="flex items-center gap-2">
+              <Image
+                alt="pix"
+                src={Pix}
+                quality={100}
+                className="w-[16px] invert"
+              />
+              <p className="text-[15px]">
+                <b>À vista no pix</b>
               </p>
             </div>
             <div

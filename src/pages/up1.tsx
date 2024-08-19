@@ -65,7 +65,7 @@ export default function Home() {
             <Truck size={32} weight="bold" color="#ededed" />
           </a>
           <a href="/dwn1" className="underline text-slate-700">
-            Vou deixar passar essa chance
+            Vou deixar passar essa chance!
           </a>
         </div>
         <Footer />

@@ -12,6 +12,11 @@ export default function Home() {
         <meta name="Teste" content="Teste" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          async
+          defer
+        ></script>
       </Head>
       <main
         className={`w-[95%] min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-6 md:w-4/5 md:gap-8 ${inter.className}`}

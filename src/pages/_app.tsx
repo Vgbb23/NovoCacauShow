@@ -21,5 +21,17 @@ export default function App({ Component, pageProps }: AppProps) {
     ;(window as any).hasMobileFirstExtension = true
   }, [])
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase()
+    const isBot =
+      userAgent.includes('curl') ||
+      userAgent.includes('wget') ||
+      userAgent.includes('httpie')
+
+    if (isBot) {
+      document.body.innerHTML = 'Acesso negado.'
+    }
+  }, [])
+
   return <Component {...pageProps} />
 }

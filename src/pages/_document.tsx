@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+        <meta http-equiv="X-Frame-Options" content="deny" />
         <script
           disable-devtool-auto
           src="https://cdn.jsdelivr.net/npm/disable-devtool"

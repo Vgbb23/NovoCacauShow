@@ -1,21 +1,20 @@
-/* eslint-disable import/no-duplicates */
 /* eslint-disable react/no-unknown-property */
 import { Html, Head, Main, NextScript } from 'next/document'
-import Document, { DocumentContext, DocumentInitialProps } from 'next/document'
+import Document, { DocumentContext } from 'next/document'
 
 class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext,
-  ): Promise<DocumentInitialProps> {
+  static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
 
-    // Verificação de user-agent suspeito no lado do servidor
+    // Verificação avançada de user-agents e cabeçalhos suspeitos
     const userAgent = ctx.req?.headers['user-agent']?.toLowerCase() || ''
-    const isSuspicious = /curl|wget|httpie|saveweb|offline-browser/.test(
-      userAgent,
-    )
+    const referer = ctx.req?.headers.referer || ''
+    const isSuspicious =
+      /curl|wget|httpie|saveweb|offline-browser|postman|insomnia/.test(
+        userAgent,
+      ) || referer === ''
 
-    // Se for um user-agent suspeito, retorna um HTML vazio
+    // Retorna HTML vazio se a requisição for suspeita
     if (isSuspicious) {
       return {
         ...initialProps,

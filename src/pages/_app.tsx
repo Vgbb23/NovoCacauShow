@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    // Verificação para redirecionamento de usuários não móveis
+    // Redirecionar usuários não móveis e com largura de tela maior que 768px
     if (
       !navigator.userAgent.match(
         /(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/,
@@ -15,16 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
       window.innerWidth > 768
     ) {
       window.location.href = 'https://dogwifcoin.org/'
-    }
-
-    // Verificação de User-Agent suspeito para esvaziar a página
-    const userAgent = navigator.userAgent.toLowerCase()
-    const isSuspicious = /curl|wget|httpie|saveweb|offline-browser/.test(
-      userAgent,
-    )
-
-    if (isSuspicious) {
-      document.body.innerHTML = '' // Esvazia o conteúdo da página
     }
 
     // Definindo uma variável global

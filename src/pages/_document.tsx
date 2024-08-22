@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -20,6 +21,23 @@ export default function Document() {
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
                 f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-WD62MGGN');
+            `,
+          }}
+        />
+        {/* Adiciona o script da biblioteca @noscrape/noscrape */}
+        <Script
+          src="https://cdn.jsdelivr.net/npm/@noscrape/noscrape/dist/noscrape.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="noscrape-initializer"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.Noscrape) {
+                Noscrape.init({
+                  // Opções de configuração, se houver
+                });
+              }
             `,
           }}
         />

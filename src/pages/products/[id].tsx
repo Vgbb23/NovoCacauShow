@@ -6,23 +6,23 @@ import {
   ArrowLeft,
   CalendarCheck,
   CaretDown,
-  CreditCard,
+  // CreditCard,
   PlusCircle,
   ShieldCheck,
   Star,
   Truck,
   X,
 } from 'phosphor-react'
-import Svg1 from '../../../public/svg1.svg'
-import Svg2 from '../../../public/svg2.svg'
-import Svg3 from '../../../public/svg3.svg'
-import Svg4 from '../../../public/svg4.svg'
-import Svg5 from '../../../public/svg5.svg'
-import Svg6 from '../../../public/svg6.svg'
-import Svg7 from '../../../public/svg7.svg'
-import Svg8 from '../../../public/svg8.svg'
-import Svg9 from '../../../public/svg9.svg'
-import Svg10 from '../../../public/svg10.svg'
+// import Svg1 from '../../../public/svg1.svg'
+// import Svg2 from '../../../public/svg2.svg'
+// import Svg3 from '../../../public/svg3.svg'
+// import Svg4 from '../../../public/svg4.svg'
+// import Svg5 from '../../../public/svg5.svg'
+// import Svg6 from '../../../public/svg6.svg'
+// import Svg7 from '../../../public/svg7.svg'
+// import Svg8 from '../../../public/svg8.svg'
+// import Svg9 from '../../../public/svg9.svg'
+// import Svg10 from '../../../public/svg10.svg'
 import Svg11 from '../../../public/svg11.svg'
 import Svg12 from '../../../public/svg12.svg'
 import Svg13 from '../../../public/svg13.svg'
@@ -234,7 +234,7 @@ export default function Sauvage() {
             <h1 className="text-xl font-bold">COMPRAR AGORA!</h1>
             <Truck size={32} weight="bold" color="#ededed" />
           </a>
-          <div className="w-full flex flex-col gap-2 p-2 border rounded-lg">
+          {/* <div className="w-full flex flex-col gap-2 p-2 border rounded-lg">
             <div className="w-full flex items-center justify-center gap-3 py-1 rounded-lg bg-[#f6f6f8] text-[#565656]">
               <CreditCard size={18} weight="bold" />
               <p className="font-bold">FORMAS DE PAGAMENTO</p>
@@ -248,7 +248,7 @@ export default function Sauvage() {
               <Image alt="metodo" src={Svg6} quality={100} width={40} />
               <Image alt="metodo" src={Svg7} quality={100} width={40} />
             </div>
-          </div>
+          </div> */}
           <div className="w-full flex items-center gap-4 p-3 border rounded-lg">
             <ShieldCheck size={32} />
             <div className="flex flex-col items-start gap-2">
@@ -286,8 +286,9 @@ export default function Sauvage() {
             <Carroussel2 />
           </div>
 
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
-          <div className="w-[70%] flex flex-col items-center gap-2">
+          {/* <div className="w-full h-[1px] bg-[#e3e3e3]" /> */}
+
+          {/* <div className="w-[70%] flex flex-col items-center gap-2">
             <h1 className="w-full text-center font-bold text-[13px]">
               FORMAS DE PAGAMENTO
             </h1>
@@ -303,8 +304,10 @@ export default function Sauvage() {
               <Image alt="metodo" src={Svg9} quality={100} width={40} />
               <Image alt="metodo" src={Svg10} quality={100} width={40} />
             </div>
-          </div>
+          </div> */}
+
           <div className="w-full h-[1px] bg-[#e3e3e3]" />
+
           <div className="w-full flex flex-col items-center gap-2">
             <h1 className="w-full font-bold text-[13px]">LOJA VERIFICADA</h1>
             <div className="w-full flex justify-start gap-[15px]">

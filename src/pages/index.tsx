@@ -1,8 +1,8 @@
 import Header from '@/components/header'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import Head from 'next/head'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Raleway({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       >
         <Header />
         <div className="w-[95%] flex flex-col justify-center items-center text-center p-8 bg-white rounded-lg shadow-xl">
-          <h1 className="text-3xl font-bold text-brown mb-5">
+          <h1 className="text-2xl font-bold text-brown mb-5 uppercase">
             Bem-vindo ao Desafio Da Cacau Show!
           </h1>
           <p className="text-lg text-black mb-4">

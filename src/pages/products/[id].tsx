@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
-import { Archivo } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import {
   ArrowLeft,
   CalendarCheck,
@@ -34,7 +34,7 @@ import Slider from 'react-slick'
 import { Carroussel2 } from '@/components/carrousel'
 import Footer from '@/components/footer'
 
-const inter = Archivo({ subsets: ['latin'] })
+const inter = Raleway({ subsets: ['latin'] })
 
 export default function Sauvage() {
   const [modal, setModal] = useState(false)
@@ -88,7 +88,7 @@ export default function Sauvage() {
         ></script>
       </Head>
       <main
-        className={`w-full min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-4 bg-white ${inter.className}`}
+        className={`w-full min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-4 ${inter.className}`}
       >
         {modal && (
           <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-[#00000050] z-30">
@@ -167,7 +167,7 @@ export default function Sauvage() {
             VOLTAR
           </a>
           <div className="w-full flex flex-col gap-4">
-            <h1 className="text-2xl text-left font-bold">
+            <h1 className="text-md text-left font-bold uppercase">
               {productData.title}
             </h1>
             <Slider {...settings} className="w-full">
@@ -249,40 +249,46 @@ export default function Sauvage() {
               <Image alt="metodo" src={Svg7} quality={100} width={40} />
             </div>
           </div> */}
-          <div className="w-full flex items-center gap-4 p-3 border rounded-lg">
-            <ShieldCheck size={32} />
+          <div className="w-full flex items-center gap-4 p-3 border border-brown-dark rounded-lg">
+            <ShieldCheck size={32} color="#4a2511" weight="fill" />
             <div className="flex flex-col items-start gap-2">
-              <p className="text-[#8f8f8f] text-[12px]">
+              <p className="text-[12px]">
                 Pagamentos e informações estão seguros
               </p>
-              <p className="text-[#8f8f8f] text-[12px]">
+              <p className="text-[12px]">
                 Site oficial com todos os direitos reservados
               </p>
             </div>
           </div>
-          <div className="w-full flex items-center gap-4 p-3 border rounded-lg">
-            <ShieldCheck size={32} />
+          <div className="w-full flex items-center gap-4 p-3 border border-brown-dark rounded-lg">
+            <ShieldCheck size={32} color="#4a2511" weight="fill" />
             <div className="flex flex-col items-start">
-              <h1 className="font-bold text-[14px]">Devoluções Gratuitas</h1>
-              <p className="text-[#8f8f8f] text-[12px]">
-                Estorno de 100% do seu dinheiro
-              </p>
-              <p className="text-[#8f8f8f] text-[12px]">
+              <h1 className="font-bold text-[14px] text-brown-dark">
+                Devoluções Gratuitas
+              </h1>
+              <p className="text-[12px]">Estorno de 100% do seu dinheiro</p>
+              <p className="text-[12px]">
                 7 dias após o recebimento da mercadoria.
               </p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
+
+          <div className="w-full h-[1px] bg-black" />
+
           <div className="w-full flex flex-col gap-3">
             <div className="w-full flex justify-between">
               <p className="text-[13px] font-bold">DESCRIÇÃO</p>
               <CaretDown size={18} />
             </div>
-            <p className="text-left font-light">{productData.desc}</p>
+            <p className="text-sm text-left font-light">{productData.desc}</p>
           </div>
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
-          <div className="w-full flex flex-col items-center justify-center gap-5">
-            <h1 className="font-bold text-lg">AVALIAÇÕES DOS USUÁRIOS</h1>
+
+          <div className="w-full h-[1px] bg-black" />
+
+          <div className="w-full flex flex-col items-center justify-center bg-white rounded-xl mb-11">
+            <h1 className="w-full py-5 font-bold text-lg bg-[#E2E8F0] rounded-t-xl">
+              AVALIAÇÕES DOS USUÁRIOS
+            </h1>
             <Carroussel2 />
           </div>
 
@@ -305,8 +311,6 @@ export default function Sauvage() {
               <Image alt="metodo" src={Svg10} quality={100} width={40} />
             </div>
           </div> */}
-
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
 
           <div className="w-full flex flex-col items-center gap-2">
             <h1 className="w-full font-bold text-[13px]">LOJA VERIFICADA</h1>
@@ -331,7 +335,6 @@ export default function Sauvage() {
               />
             </div>
           </div>
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
         </div>
         <Footer />
       </main>

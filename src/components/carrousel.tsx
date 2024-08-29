@@ -42,7 +42,7 @@ export function Carroussel2() {
     adaptiveHeight: true,
   }
   return (
-    <Slider {...settings} className="w-full shadow-2xl rounded-xl mb-4">
+    <Slider {...settings} className="w-full shadow-2xl rounded-xl">
       <Dep
         name="Mariana A."
         time="há 20 minutos"

@@ -2,11 +2,11 @@
   "products": [
     {
       "id": 1,
-      "title": "Caixa Branca Cacau Show Tablete Dreams Torta de Maracujá 1,04kg",
+      "title": "Caixa Branca Cacau Show Tablete lanut avelã 1,04kg",
       "rate": 72,
       "price": "67,90",
       "parcelamento": "9,05",
-      "desc": "Linha Dreams: são tabletes generosamente recheados, inspirados nas mais apreciadas sobremesas. O tablete Torta de Maracujá é de chocolate ao leite e combina biscoito com um delicioso recheio cremoso. Você vai se deliciar e sonhar acordado!",
+      "desc": "Tablete de chocolate ao leite com pasta de avelã, tão cremoso que derrete na boca!",
       "href": "https://pay.pagamentocacaudesafio.site/nQ7kZ7yanxNg0eJ",
       "images": [
         "/prod1/prod1.webp",
@@ -17,25 +17,26 @@
     },
     {
       "id": 2,
-      "title": "Caixa Trufas Strudel de Maçã Cacau Show 750g",
+      "title": "Caixa Trufas Lanut Cacau Show 750g",
       "rate": 96,
       "price": "42,90",
       "parcelamento": "5,72",
-      "desc": "Representando a região Sul, trazemos a sobremesa Strudel de Maçã em forma de trufa: com casca de chocolate ao leite com recheio sabor maçã com canela. Viajar pelo Brasil nunca foi tão gostoso!",
+      "desc": "A Trufa LaNut é uma combinação perfeita de sabor e sofisticação que só a Cacau Show sabe fazer. Feita com ingredientes de alta qualidade, é uma opção perfeita para os amantes de chocolate e para qualquer momento do seu dia!",
       "href": "https://pay.pagamentocacaudesafio.site/6YQPgj2EbVQgpxz",
       "images": [
         "/prod2/prod1.webp",
         "/prod2/prod2.webp",
-        "/prod2/prod3.webp"
+        "/prod2/prod3.webp",
+        "/prod2/prod4.webp"
       ]
     },
     {
       "id": 3,
-      "title": "Caixa Branca Cacau Show Tabletes Dreams Banoffee 1,040kg",
+      "title": "Caixa Branca Cacau Show Tablete Ao Leite Com Castanha De Caju 1,040kg",
       "rate": 54,
       "price": "64,90",
       "parcelamento": "8,65",
-      "desc": "Tablete de chocolate ao leite e branco com recheio sabor banoffe. Uma sobremesa tradicional com o sublime toque Cacau Show!",
+      "desc": "O tradicional chocolate ao leite da Cacau Show ganhou um sabor ainda mais especial com pedacinhos de castanha-de-caju. A combinação perfeita entre uma das mais tradicionais castanhas do Brasil e o chocolate.",
       "href": "https://pay.pagamentocacaudesafio.site/kYL6geDoOVXGrKM",
       "images": [
         "/prod3/prod1.webp",

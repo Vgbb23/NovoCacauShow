@@ -10,6 +10,13 @@ interface Question {
 
 const questions = [
   {
+    question:
+      'O chocolate é conhecido por ser um presente popular em qual feriado?',
+    options: ['Páscoa', 'Carnaval', 'Ano Novo'],
+    answer: 'Páscoa',
+    hint: 'É um feriado onde ovos de chocolate são muito comuns.',
+  },
+  {
     question: 'De que planta vem o chocolate?',
     options: ['Café', 'Cacau', 'Baunilha'],
     answer: 'Cacau',
@@ -17,28 +24,21 @@ const questions = [
   },
   {
     question: 'Qual cor é associada ao chocolate ao leite?',
-    options: ['Branco', 'Preto', 'Marrom'],
+    options: ['Branco', 'Verde', 'Marrom'],
     answer: 'Marrom',
     hint: 'É a cor mais comum de chocolate.',
   },
   {
+    question: 'O que é adicionado ao chocolate para torná-lo doce?',
+    options: ['Sal', 'Açúcar', 'Farinha'],
+    answer: 'Açúcar',
+    hint: 'É um ingrediente comum em sobremesas e doces.',
+  },
+  {
     question: 'Qual é o principal ingrediente do chocolate branco?',
-    options: ['Leite', 'Açúcar', 'Manteiga de cacau'],
+    options: ['Fermento', 'Arroz', 'Manteiga de cacau'],
     answer: 'Manteiga de cacau',
     hint: 'Este ingrediente é frequentemente usado em protetores labiais.',
-  },
-  {
-    question:
-      'O chocolate é conhecido por ser um presente popular em qual feriado?',
-    options: ['Páscoa', 'Natal', 'Ano Novo'],
-    answer: 'Páscoa',
-    hint: 'É um feriado onde ovos de chocolate são muito comuns.',
-  },
-  {
-    question: 'Qual país é famoso por seus chocolates?',
-    options: ['Brasil', 'Suíça', 'Japão'],
-    answer: 'Suíça',
-    hint: 'Este país é conhecido por suas montanhas e chocolates.',
   },
 ]
 

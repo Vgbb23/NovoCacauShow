@@ -181,7 +181,7 @@ export default function Sauvage() {
               ))}
             </Slider>
           </div>
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
+          <div className="w-full h-[1px] bg-brown-dark" />
           <div className="w-full flex flex-col items-start justify-center gap-3">
             <p className="text-left text-lg text-black">
               <b>50% do valor gerado</b> com as vendas será destinado a{' '}
@@ -220,13 +220,13 @@ export default function Sauvage() {
             </div>
             <div
               onClick={changeModal}
-              className="flex items-center gap-1 px-2 py-1 border rounded-md"
+              className="flex items-center gap-1 px-2 py-1 border border-brown-dark rounded-md"
             >
               <PlusCircle size={18} weight="bold" />
               <p>Formas de pagamento</p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-[#e3e3e3]" />
+          <div className="w-full h-[1px] bg-brown-dark" />
           <a
             href={productData.href}
             className="w-full flex justify-center items-center gap-3 p-5 bg-[#64c45b] text-white rounded-lg shadow-xl"
@@ -280,7 +280,7 @@ export default function Sauvage() {
               <p className="text-[13px] font-bold">DESCRIÇÃO</p>
               <CaretDown size={18} />
             </div>
-            <p className="text-sm text-left font-light">{productData.desc}</p>
+            <p className="text-sm text-left">{productData.desc}</p>
           </div>
 
           <div className="w-full h-[1px] bg-black" />
@@ -313,26 +313,11 @@ export default function Sauvage() {
           </div> */}
 
           <div className="w-full flex flex-col items-center gap-2">
-            <h1 className="w-full font-bold text-[13px]">LOJA VERIFICADA</h1>
-            <div className="w-full flex justify-start gap-[15px]">
-              <Image
-                alt="metodo"
-                src={Svg11}
-                quality={100}
-                className="w-full"
-              />
-              <Image
-                alt="metodo"
-                src={Svg12}
-                quality={100}
-                className="w-full"
-              />
-              <Image
-                alt="metodo"
-                src={Svg13}
-                quality={100}
-                className="w-full"
-              />
+            <h1 className="w-full font-bold text-sm">LOJA VERIFICADA</h1>
+            <div className="w-full flex justify-center gap-[15px]">
+              <Image alt="metodo" src={Svg11} quality={100} />
+              <Image alt="metodo" src={Svg12} quality={100} />
+              <Image alt="metodo" src={Svg13} quality={100} />
             </div>
           </div>
         </div>

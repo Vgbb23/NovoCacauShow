@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 import { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -24,21 +23,13 @@ export default function Document() {
             `,
           }}
         />
-        {/* Adiciona o script da biblioteca @noscrape/noscrape */}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/@noscrape/noscrape/dist/noscrape.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="noscrape-initializer"
+        <script
           dangerouslySetInnerHTML={{
-            __html: `
-              if (window.Noscrape) {
-                Noscrape.init({
-                  // Opções de configuração, se houver
-                });
-              }
-            `,
+            __html: `(function(c,l,a,r,i,t,y){
+           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ntgivinxn2")`,
           }}
         />
       </Head>

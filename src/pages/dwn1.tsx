@@ -62,7 +62,7 @@ export default function Home() {
             CLIQUE NO BOTÃO ABAIXO PARA GARANTIR SEU URSO COM DESCONTO:
           </p>
           <a
-            href="https://pay.finalizarcacaudesafio.store/zj6aGnd9L9l3wlK"
+            href="https://pay.pagamentocacaudesafio.site/5pjw3RXKJE0G2lQ"
             className="w-full flex justify-center items-center gap-3 p-5 bg-[#64c45b] text-white rounded-lg shadow-xl"
           >
             <h1 className="text-xl font-bold">COMPRAR AGORA!</h1>

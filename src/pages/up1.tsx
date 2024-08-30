@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Up from '../../public/up.webp'
-import Image from 'next/image'
 import { Truck } from 'phosphor-react'
 import Footer from '@/components/footer'
+import { Carroussel4 } from '@/components/carrousel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +34,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="w-[90%] flex flex-col gap-4">
+        <div className="w-[90%] flex flex-col items-center gap-4">
           <h1 className="text-base font-bold md:text-3xl">
             <u>PARABÉNS!</u> VOCÊ FEZ A <b>ESCOLHA CERTA!</b> SEU PAGAMENTO ESTÁ{' '}
             <u>EM PROCESSAMENTO.</u>
@@ -45,20 +44,20 @@ export default function Home() {
             <u>presentear quem você ama?</u>
           </h1>
           <p>
-            <b>Exclusivo para você:</b> Nosso urso de pelúcia com{' '}
+            <b>Exclusivo para você:</b> 50 Tabletes sortidos de 5g com{' '}
             <u>desconto especial.</u>
           </p>
           <p>
-            <b>Um urso fofo e macio,</b> perfeito para encantar quem você{' '}
-            <u>mais ama!</u>
+            <b>Chocolate que derrete na boca,</b> perfeito para encantar quem
+            você <u>mais ama!</u>
           </p>
-          <Image alt="product" src={Up} quality={100} />
+          <Carroussel4 />
           <div>
             <h1 className="text-xl text-red-600">De: R$ 89,90</h1>
             <h1 className="text-2xl font-bold">Por: R$ 29,90</h1>
           </div>
           <a
-            href="https://pay.pagamentocacaudesafio.site/6YQPgj2EbkQgpxz"
+            href="https://pay.pagamentocacaudesafio.site/JqoR32v15403Vj5"
             className="w-full flex justify-center items-center gap-3 p-5 bg-[#64c45b] text-white rounded-lg shadow-xl"
           >
             <h1 className="text-xl font-bold">COMPRAR AGORA!</h1>

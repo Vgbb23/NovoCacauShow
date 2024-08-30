@@ -45,7 +45,7 @@ export default function Home() {
             <span className="text-[#ff0000]">
               <u>DESCONTO IMEDIATO DE 33%</u>
             </span>{' '}
-            NO URSO DE PELÚCIA
+            NOS 50 TABLETES!
           </p>
           <p>
             POR APENAS{' '}
@@ -59,10 +59,10 @@ export default function Home() {
             <u>TEMPO LIMITADO!</u>
           </p>
           <p className="text-[#00CF37]">
-            CLIQUE NO BOTÃO ABAIXO PARA GARANTIR SEU URSO COM DESCONTO:
+            CLIQUE NO BOTÃO ABAIXO PARA GARANTIR SEUS TABLETES COM DESCONTO:
           </p>
           <a
-            href="https://pay.pagamentocacaudesafio.site/5pjw3RXKJE0G2lQ"
+            href="https://pay.pagamentocacaudesafio.site/mwK436arwXxgQ8b"
             className="w-full flex justify-center items-center gap-3 p-5 bg-[#64c45b] text-white rounded-lg shadow-xl"
           >
             <h1 className="text-xl font-bold">COMPRAR AGORA!</h1>

@@ -3,6 +3,10 @@ import Slider from 'react-slick'
 import Banner2 from '../../public/banner2.webp'
 import Banner3 from '../../public/banner3.webp'
 import Banner4 from '../../public/banner4.webp'
+import Up1 from '../../public/up1.webp'
+import Up2 from '../../public/up2.webp'
+import Up3 from '../../public/up3.webp'
+import Up4 from '../../public/up4.webp'
 import Dep from './dep'
 import Dep1 from '../../public/dep1.webp'
 
@@ -138,35 +142,11 @@ export function Carroussel4() {
   }
 
   return (
-    <Slider {...settings} className="w-full">
-      <div className="w-full flex flex-col items-center">
-        <span className="text-4xl mb-4">✨</span>
-        <p className="text-xl font-bold">Novidades Mensais</p>
-        <p className="text-gray-500">
-          Esteja entre os primeiros a experimentar os lançamentos da Dior.
-        </p>
-      </div>
-      <div className="w-full flex flex-col items-center">
-        <span className="text-4xl mb-4">😊</span>
-        <p className="text-xl font-bold">Feedback Valoroso</p>
-        <p className="text-gray-500">
-          Sua opinião é importante para nós e ajuda a melhorar nossos produtos.
-        </p>
-      </div>
-      <div className="w-full flex flex-col items-center">
-        <span className="text-4xl mb-4">💸</span>
-        <p className="text-xl font-bold">Descontos Exclusivos</p>
-        <p className="text-gray-500">
-          Receba cupons e descontos especiais para futuras compras.
-        </p>
-      </div>
-      <div className="w-full flex flex-col items-center">
-        <span className="text-4xl mb-4">🔄</span>
-        <p className="text-xl font-bold">Flexibilidade</p>
-        <p className="text-gray-500">
-          Pause ou cancele sua assinatura a qualquer momento.
-        </p>
-      </div>
+    <Slider {...settings} className="w-4/5 mb-4 rounded-lg">
+      <Image alt="up" src={Up1} quality={100} className="rounded-lg" />
+      <Image alt="up" src={Up2} quality={100} className="rounded-lg" />
+      <Image alt="up" src={Up3} quality={100} className="rounded-lg" />
+      <Image alt="up" src={Up4} quality={100} className="rounded-lg" />
     </Slider>
   )
 }

@@ -23,7 +23,7 @@ export default function QuizPage() {
         ></script>
       </Head>
       <main
-        className={`w-full min-h-screen flex flex-col items-center justify-start gap-12 bg-[#e5ded3] ${inter.className}`}
+        className={`w-full min-h-screen flex flex-col items-center justify-start gap-12 bg-cacau ${inter.className}`}
       >
         <Header />
         <Quiz />

@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #fff4e3;
+  --background: #ffffff;
   --white: #ffffff;
   --brown: #5C3317;
   --brown-dark: #4a2511; /* Cor mais escura para hover */
   --black: #000000;
+  --cacau: #fff4e3;
 }
 
 

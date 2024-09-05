@@ -19,6 +19,7 @@ const config: Config = {
         brown: 'var(--brown)',
         'brown-dark': 'var(--brown-dark)',
         black: 'var(--black)',
+        cacau: 'var(--cacau)',
       },
     },
   },

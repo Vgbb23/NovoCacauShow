@@ -23,7 +23,7 @@ export default function Mondial() {
         ></script>
       </Head>
       <main
-        className={`w-full min-h-screen flex flex-col items-center justify-start text-center mx-auto ${inter.className}`}
+        className={`w-full min-h-screen flex flex-col items-center justify-start text-center mx-auto bg-cacau ${inter.className}`}
       >
         <Header />
         <Carroussel />

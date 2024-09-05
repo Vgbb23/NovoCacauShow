@@ -19,7 +19,7 @@ export default function Home() {
         ></script>
       </Head>
       <main
-        className={`w-[90%] min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-6 md:w-4/5 md:gap-8 ${inter.className}`}
+        className={`w-[90%] min-h-screen flex flex-col items-center justify-start text-center mx-auto gap-6 bg-cacau ${inter.className}`}
       >
         <div className="w-screen flex justify-center bg-[#22130f] p-4 md:py-6">
           <h1 className="w-full text-3xl underline font-black text-white md:text-4xl md:w-4/5">

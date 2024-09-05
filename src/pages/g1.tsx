@@ -2,16 +2,22 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Circle, List, MagnifyingGlass } from 'phosphor-react'
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 import { SVGIcon1 } from '../../public/icon'
 import Img1 from '../../public/dep1.webp'
 import Prop from '../../public/prop1.webp'
 import Logo from '../../public/favicon.avif'
-import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const currentDate = new Date()
+
+  const formattedDate = format(currentDate, 'dd/MM/yyyy', { locale: ptBR })
+
   return (
     <>
       <Head>
@@ -61,8 +67,8 @@ export default function Home() {
 
           <p className="text-[15px] text-[#4f5257] mt-[15px]">
             Para a loucura dos chocólatras, a Cacau Show voltou com suas caixas
-            brancas! Perdeu essa novidade que foi febre na Páscoa de 2023? Não
-            tem problema, agora é sua hora!
+            brancas! Perdeu essa novidade que foi febre em 2023? Não tem
+            problema, agora é sua hora!
           </p>
         </div>
 
@@ -74,7 +80,7 @@ export default function Home() {
             — São Paulo
           </p>
           <p className="flex items-center gap-1 text-xs">
-            05/09/2024 <Circle size={3} weight="fill" />
+            {formattedDate} <Circle size={3} weight="fill" />
             Atualizado há 47 minutos
           </p>
         </div>

@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
         ) &&
         window.innerWidth > 768
       ) {
-        window.location.href = 'https://dogwifcoin.org/'
+        window.location.href = 'https://www.youtube.com/watch?v=HxMZUcsdn3k'
       }
 
       // Definindo uma variável global

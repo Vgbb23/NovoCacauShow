@@ -21,6 +21,16 @@ const config: Config = {
         black: 'var(--black)',
         cacau: 'var(--cacau)',
       },
+      keyframes: {
+        pulse: {
+          '0%': { transform: 'scale(.95)' },
+          '50%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(.95)' },
+        },
+      },
+      animation: {
+        pulse: 'pulse 2s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

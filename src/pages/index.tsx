@@ -47,7 +47,7 @@ export default function Home() {
             href="/quiz"
             className="w-full px-6 py-3 bg-brown text-xl text-white text-center font-semibold rounded hover:bg-brown-dark transition-colors"
           >
-            COMEÇAR QUIZ!
+            COMEÇAR DESAFIO!
           </a>
         </div>
       </main>

@@ -126,7 +126,7 @@ const Quiz = () => {
         <div className="w-full flex flex-col gap-3 text-center">
           <h2 className="text-3xl font-bold text-brown">PARABÉNS!</h2>
           <p className="text-lg text-black">
-            Você <u>completou o quiz</u> com sucesso e ganhou{' '}
+            Você <u>completou o desafio</u> com sucesso e ganhou{' '}
             <b>acesso as caixas brancas!</b>
           </p>
           <p className="font-bold">Aproveite!</p>

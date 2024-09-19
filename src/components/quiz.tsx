@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Question from './question'
+import Image from 'next/image'
+import Logo from '../../public/logo.svg'
+import { useRouter } from 'next/router'
 
 interface Question {
   question: string
@@ -51,6 +54,8 @@ const Quiz = () => {
   }>({ isCorrect: false, selectedOption: null })
   const [showErrorModal, setShowErrorModal] = useState(false)
   const [completionSoundPlayed, setCompletionSoundPlayed] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const router = useRouter()
 
   const handleAnswer = (selectedOption: string) => {
     const isCorrect = questions[currentQuestion].answer === selectedOption
@@ -86,6 +91,29 @@ const Quiz = () => {
     setShowErrorModal(false)
   }
 
+  const handlePurchaseClick = () => {
+    setLoading(true) // Inicia o estado de loading
+
+    setTimeout(() => {
+      router.push('/caixas-brancas') // Redireciona para a página de compra
+    }, 3500) // Simula 3.5 segundos de carregamento
+  }
+
+  if (loading) {
+    // Tela de loading
+    return (
+      <div className="w-full h-full flex flex-col gap-6 justify-center items-center">
+        <Image
+          alt="logo"
+          src={Logo}
+          quality={100}
+          className="animate-pulse invert"
+        />
+        <h1 className="">Carregando estoque...</h1>
+      </div>
+    )
+  }
+
   return (
     <div className="w-[95%] flex flex-col justify-center items-center text-center p-8 bg-white rounded-lg shadow-lg relative">
       <h1 className="text-2xl font-bold text-brown mb-6 underline uppercase">
@@ -93,6 +121,20 @@ const Quiz = () => {
       </h1>
       {!quizCompleted && (
         <>
+          {/* Texto de Progresso */}
+          <div className="text-lg font-semibold mb-4">
+            Pergunta {currentQuestion + 1} de {questions.length}
+          </div>
+
+          {/* Barra de Progresso */}
+          <div className="w-full bg-gray-300 rounded-full h-2.5 mb-4">
+            <div
+              className="bg-brown h-2.5 rounded-full"
+              style={{
+                width: `${((currentQuestion + 1) / questions.length) * 100}%`,
+              }}
+            ></div>
+          </div>
           <Question
             question={questions[currentQuestion].question}
             options={questions[currentQuestion].options}
@@ -130,12 +172,12 @@ const Quiz = () => {
             <b>acesso as caixas brancas!</b>
           </p>
           <p className="font-bold">Aproveite!</p>
-          <a
-            href="/caixas-brancas"
+          <button
+            onClick={handlePurchaseClick}
             className="w-full px-6 py-3 bg-brown text-xl text-white text-center font-semibold rounded hover:bg-brown-dark transition-colors"
           >
             Ir para a Compra
-          </a>
+          </button>
         </div>
       )}
     </div>

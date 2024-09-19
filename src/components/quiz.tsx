@@ -96,7 +96,7 @@ const Quiz = () => {
 
     setTimeout(() => {
       router.push('/caixas-brancas') // Redireciona para a página de compra
-    }, 3500) // Simula 3.5 segundos de carregamento
+    }, 2500) // Simula 3.5 segundos de carregamento
   }
 
   if (loading) {

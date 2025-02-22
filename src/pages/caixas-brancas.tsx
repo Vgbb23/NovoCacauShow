@@ -16,14 +16,6 @@ export default function CaixasBrancas() {
         <meta name="Teste" content="Teste" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
-        <script>
-  window.pixelId = "67ba2e79903a0cc09303ebb7";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-  </script>
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           async
